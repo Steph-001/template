@@ -1,0 +1,57 @@
+[
+  {
+    "base": "do",
+    "past": "did",
+    "participle": "done"
+  },
+  {
+    "base": "say",
+    "past": "said",
+    "participle": "said"
+  },
+  {
+    "base": "go",
+    "past": "went",
+    "participle": "gone"
+  },
+  {
+    "base": "get",
+    "past": "got",
+    "participle": "got/gotten"
+  },
+  {
+    "base": "make",
+    "past": "made",
+    "participle": "made"
+  },
+  {
+    "base": "know",
+    "past": "knew",
+    "participle": "known"
+  },
+  {
+    "base": "think",
+    "past": "thought",
+    "participle": "thought"
+  },
+  {
+    "base": "come",
+    "past": "came",
+    "participle": "come"
+  },
+  {
+    "base": "find",
+    "past": "found",
+    "participle": "found"
+  },
+  {
+    "base": "give",
+    "past": "gave",
+    "participle": "given"
+  },
+  {
+    "base": "write",
+    "past": "wrote",
+    "participle": "written"
+  }
+]
