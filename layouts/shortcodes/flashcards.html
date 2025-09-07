@@ -248,21 +248,32 @@ justify-content: center;
 box-sizing: border-box;
 overflow: hidden;
 }
+
+/* Fix for flexbox spacing issue with stressed vowels */
 .term, .question {
-font-size: clamp(1.4rem, 5vw, 2rem);
-font-weight: bold;
-margin-bottom: 1rem;
-text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-line-height: 1.3;
-overflow-wrap: break-word;
-hyphens: auto;
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-height: 100%;
-margin: 0 auto;
+    font-size: clamp(1.4rem, 5vw, 2rem);
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    line-height: 1.3;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    margin: 0 auto;
+    /* Add this to preserve whitespace in flex containers */
+    white-space: pre-wrap;
 }
+
+
+
+
+
+
+
 .term-small, .question-small {
 font-size: clamp(0.85rem, 3.2vw, 1.1rem);
 font-weight: bold;
@@ -560,13 +571,23 @@ this.initializeSession();
 this.updateDisplay();
 });
 }
-// NEW: Stress processing method
+
+
+
+// NEW: Improved stress processing method
 processStressedText(text) {
-if (!text) return text;
-// Convert *vowel notation to red spans
-let processed = text.replace(/\*([aeiouwAEIOUáéíóúÁÉÍÓÚ])/g, '<span class="stressed-vowel">$1</span>');
-return processed;
+    if (!text) return text;
+    
+    // Handle *vowel notation with optional preceding space
+    // This regex captures any space before * and preserves it
+    let processed = text.replace(/(\s?)\*([ayeiouwAEYIOUáéíóúÁÉÍÓÚ])/g, '$1<span class="stressed-vowel">$2</span>');
+    
+    return processed;
 }
+
+
+
+
 initDOM() {
 this.elements = {
 flashcard: document.getElementById('flashcard'),

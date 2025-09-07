@@ -20,7 +20,7 @@
 <!-- DEBUG: term="{{ .term }}" stressed="{{ .stressed }}" -->
 {{ if .stressed }}
   {{/* Use replaceRE with inline styles for red stressed vowels */}}
-  {{ .stressed | replaceRE "\\*([aeiouwAEIOU])" "<span style=\"color: red; font-weight: bold;\">$1</span>" | safeHTML }}
+  {{ .stressed | replaceRE "\\*([yaeiouwAYEIOU])" "<span style=\"color: red; font-weight: bold;\">$1</span>" | safeHTML }}
 {{ else }}
   {{ .term }}
 {{ end }}

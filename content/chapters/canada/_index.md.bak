@@ -1,0 +1,62 @@
+---
+title: "Open Canada"
+linkTitle: "Canada"
+date: "2025-08-29T17:42:47+02:00"
+draft: false
+weight: 1
+lexicon:
+  - term: "on average"
+    definition: "en moyenne"
+    stressed: "on *average"
+  - term: "alley"
+    definition: "a narrow street"
+    stressed: "*alley"
+  - term: "downtown"
+    definition: "city centre"
+    stressed: "downt*own"
+  - term: "skyscraper"
+    definition: "gratte-ciel"
+    stressed: "sk*yscraper"
+  - term: "animated"
+    definition: "animé"
+    stressed: "*animated"
+  - term: "crowded"
+    definition: "full of people"
+    stressed: "cr*owded"
+  - term: "public"
+    definition: "≠ private"
+    stressed: "p*ublic"
+  - term: "private"
+    definition: "≠ public"
+    stressed: "pr*ivate"
+  - term: "colourful"
+    definition: "having bright colours of a lot of different colours"
+    stressed: "c*olourful"
+  - term: "fountain"
+    definition: "fontaine"
+    stressed: "f*o*untain"
+  - term: "parasol"
+    definition: "parasol"
+    stressed: "p*arasol"
+---
+{{< fullscreen-image src="toronto.jpg" max_width="80%" align="center" >}}
+
+{{< spacer height="4rem" >}}
+
+### A - Canada's changing cityscape
+{{< gallery max_width="200px" >}}
+{{< spacer height="4rem" >}}
+### B - Private space or public park?
+{{< pdf src="toronto.pdf" max_width="400px" align="center">}}
+{{< spacer height="4rem" >}}
+### C - A break from the hustle and bustle of the city
+
+
+{{< local-video src="yoga.mp4" poster="yoga.jpg" max_width="80%" align="center">}}
+
+<div class="card border-0">
+  <div class="card-body">
+    <p class="card-text text-center">Free Parliament Hill yoga in Ottawa.</p>
+  </div>
+</div>
+

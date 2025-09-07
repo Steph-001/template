@@ -196,3 +196,42 @@
   }
 }
 
+// Si vous utilisez weight: 10, 20, 30, 40, 50, 60 pour vos sections principales
+.td-sidebar-nav li[data-weight="10"]:after,
+.td-sidebar-nav li[data-weight="20"]:after,
+.td-sidebar-nav li[data-weight="30"]:after,
+.td-sidebar-nav li[data-weight="40"]:after,
+.td-sidebar-nav li[data-weight="50"]:after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #dee2e6;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+// Ajoutez les IDs des sections où vous voulez des barres
+#m-chaptersafrican_natives-li {
+  border-bottom: 2px solid $primary !important;
+  padding-bottom: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+
+//Pour personnaliser, voici tous les IDs disponibles selon votre structure :
+//Sections principales (ul-1) :
+
+//#m-chapters-li (après "Units")
+//#m-cecrl-li (après "Grille d'évaluation")
+//#m-verbs-li (après "Irregular Verbs")
+//#m-links-li (après "Links")
+
+//Chapitres individuels (ul-2) :
+
+//#m-chapterscanada-li (après "Canada")
+//#m-chapterspower_of_english-li (après "Magic of English")
+//#m-chaptersamish-li (après "Amish")
+//#m-chapterstop-li (après "Flop to Top")
+//#m-chaptersafrican_natives-li (après "Black American Indians")
+
+

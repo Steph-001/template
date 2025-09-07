@@ -17211,6 +17211,10 @@ readers do not read off random characters that represent icons */
 .fa-steam-symbol:before {
   content: "\f3f6"; }
 
+/*
+Projects can override this file. For details, see:
+https://www.docsy.dev/docs/adding-content/lookandfeel/#project-style-files
+*/
 .td-border-top {
   border: none;
   border-top: 1px solid #eee; }
@@ -17525,30 +17529,6 @@ readers do not read off random characters that represent icons */
 
 .-text-dark {
   color: #403f4c; }
-
-.-bg-my-favorite-color {
-  color: #fff;
-  background-color: purple; }
-
-.-bg-my-favorite-color p:not(.p-initial) > a {
-  color: #c2dbfe; }
-  .-bg-my-favorite-color p:not(.p-initial) > a:hover {
-    color: #094db1; }
-
-.-text-my-favorite-color {
-  color: purple; }
-
-.-bg-my-other-color {
-  color: #000;
-  background-color: pink; }
-
-.-bg-my-other-color p:not(.p-initial) > a {
-  color: #0b60de; }
-  .-bg-my-other-color p:not(.p-initial) > a:hover {
-    color: #094db1; }
-
-.-text-my-other-color {
-  color: pink; }
 
 .-bg-100 {
   color: #000;
@@ -18509,44 +18489,6 @@ readers do not read off random characters that represent icons */
   .td-box--dark p > a:hover, .td-footer p > a:hover, .td-box--dark span > a:hover, .td-footer span > a:hover {
     color: #d1e3fe; }
 
-.td-box--my-favorite-color {
-  color: #fff;
-  background-color: purple; }
-  .td-box--my-favorite-color .td-arrow-down::before {
-    left: 50%;
-    margin-left: -30px;
-    bottom: -25px;
-    border-style: solid;
-    border-width: 25px 30px 0 30px;
-    border-color: purple transparent transparent transparent;
-    z-index: 3;
-    position: absolute;
-    content: ""; }
-
-.td-box--my-favorite-color p > a, .td-box--my-favorite-color span > a {
-  color: #c2dbfe; }
-  .td-box--my-favorite-color p > a:hover, .td-box--my-favorite-color span > a:hover {
-    color: #d4e6fe; }
-
-.td-box--my-other-color {
-  color: #000;
-  background-color: pink; }
-  .td-box--my-other-color .td-arrow-down::before {
-    left: 50%;
-    margin-left: -30px;
-    bottom: -25px;
-    border-style: solid;
-    border-width: 25px 30px 0 30px;
-    border-color: pink transparent transparent transparent;
-    z-index: 3;
-    position: absolute;
-    content: ""; }
-
-.td-box--my-other-color p > a, .td-box--my-other-color span > a {
-  color: #0b60de; }
-  .td-box--my-other-color p > a:hover, .td-box--my-other-color span > a:hover {
-    color: #08439b; }
-
 .td-box--100 {
   color: #000;
   background-color: #f8f9fa; }
@@ -19169,18 +19111,6 @@ nav.foldable-nav .with-child ul {
     border-width: 0 0 0 4px; }
     .alert-dark .alert-heading, .pageinfo-dark .alert-heading {
       color: #403f4c; }
-  .alert-my-favorite-color, .pageinfo-my-favorite-color {
-    border-style: solid;
-    border-color: purple;
-    border-width: 0 0 0 4px; }
-    .alert-my-favorite-color .alert-heading, .pageinfo-my-favorite-color .alert-heading {
-      color: purple; }
-  .alert-my-other-color, .pageinfo-my-other-color {
-    border-style: solid;
-    border-color: pink;
-    border-width: 0 0 0 4px; }
-    .alert-my-other-color .alert-heading, .pageinfo-my-other-color .alert-heading {
-      color: pink; }
 
 .td-content {
   order: 1; }
@@ -19411,10 +19341,6 @@ h6:hover > .td-heading-self-link, .h6:hover > .td-heading-self-link {
   .pageinfo-light {
     border-width: 0; }
   .pageinfo-dark {
-    border-width: 0; }
-  .pageinfo-my-favorite-color {
-    border-width: 0; }
-  .pageinfo-my-other-color {
     border-width: 0; }
 
 .td-page-meta__lastmod {
@@ -19757,12 +19683,6 @@ div.drawioframe {
   .tab-body-dark {
     border-style: solid;
     border-color: #403f4c; }
-  .tab-body-my-favorite-color {
-    border-style: solid;
-    border-color: purple; }
-  .tab-body-my-other-color {
-    border-style: solid;
-    border-color: pink; }
 
 .td-card.card .highlight {
   border: none;
@@ -19940,5 +19860,21 @@ div.drawioframe {
 @media (max-width: 768px) {
   .td-heading-self-link {
     display: none !important; } }
+
+.td-sidebar-nav li[data-weight="10"]:after,
+.td-sidebar-nav li[data-weight="20"]:after,
+.td-sidebar-nav li[data-weight="30"]:after,
+.td-sidebar-nav li[data-weight="40"]:after,
+.td-sidebar-nav li[data-weight="50"]:after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #dee2e6;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+#m-chaptersafrican_natives-li {
+  border-bottom: 2px solid #415E72 !important;
+  padding-bottom: 10px !important;
+  margin-bottom: 10px !important; }
 
 /*# sourceMappingURL=main.css.map */
